@@ -1,4 +1,14 @@
 FR streamlit
+streamlit_app/
+├── app.py
+├── pages/
+│   ├── home.py
+│   ├── cv_references.py
+│   ├── projects.py
+│   ├── blog.py
+│   └── legal.py
+└── resources/
+    └── images/
 │
 ├── Switch between german and englisch
 │
