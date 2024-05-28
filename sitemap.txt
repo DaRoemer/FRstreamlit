@@ -1,0 +1,36 @@
+FR streamlit
+│
+├── Switch between german and englisch
+│
+├── Home
+│   ├── Picture of me. A few sentences
+│   ├── Link to CV and References
+│   ├── Link to Projects
+│   ├── Link to blog
+│   ├── Link to ????
+│
+├── CV and References
+│   ├── Downloadable as PDF or zip together with References
+│   ├── Top general description
+│   ├── Underneat slides that are clickable. With universtiy pic and short text
+│   ├── At bottom again circles for references pictures
+│
+├── Projects
+│   ├── Same style as for CV
+│   ├── when clicked, link to subpage
+│       ├── Same for every page.
+│       ├── Use same font etc as for other pages
+│       ├── At the beginning use some hastags to describe the topic
+│       ├── Sturuture:
+│           ├── Header
+│           ├── Introduction
+│           ├── Results
+│           ├── Accnologement
+│
+├── Blog
+│   ├── Entrypage: pic of me climbing or sth. Ask for passwort to continue
+│       ├── Fill later
+│
+└── Legal
+    ├── Terms
+    └── Privacy policy
