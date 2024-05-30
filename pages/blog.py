@@ -2,7 +2,7 @@ import streamlit as st
 
 def show():
     st.title("Blog")
-    st.image("resources/images/climbing.jpg", caption="Climbing Picture")
+    st.image("resources/images/example.jpg", caption="Climbing Picture")
     password = st.text_input("Enter Password", type="password")
 
     if password == "your_password":
