@@ -1,9 +1,13 @@
 import streamlit as st
+from resources.translations import translate
+
 
 def show():
-    st.title("Legal")
-    st.header("Terms")
-    st.write("Terms content here")
+    language = st.session_state.get("language", "en")
 
-    st.header("Privacy Policy")
-    st.write("Privacy policy content here")
+    st.title(translate("Legal", language))
+    st.header(translate("Terms", language))
+    st.write(translate("Terms content here", language))
+
+    st.header(translate("Privacy Policy", language))
+    st.write(translate("Privacy policy content here", language))
