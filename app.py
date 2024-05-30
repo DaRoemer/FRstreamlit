@@ -1,9 +1,14 @@
 import streamlit as st
 from pages import home, cv_references, projects, blog, legal
+from resources.translations import translate
 
 def main():
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ["Home", "CV and References", "Projects", "Blog", "Legal"])
+    
+    st.sidebar.title("Language")
+    language = st.sidebar.radio("Switch Language", ["English", "German"])
+    st.write(f"Selected Language: {language}")
 
     if page == "Home":
         home.show()
@@ -16,9 +21,6 @@ def main():
     elif page == "Legal":
         legal.show()
 
-    st.sidebar.title("Language")
-    language = st.sidebar.radio("Switch Language", ["English", "German"])
-    st.write(f"Selected Language: {language}")
 
 if __name__ == "__main__":
     main()

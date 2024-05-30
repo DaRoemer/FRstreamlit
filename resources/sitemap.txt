@@ -8,7 +8,9 @@ streamlit_app/
 │   ├── blog.py
 │   └── legal.py
 └── resources/
-    └── images/
+│   └── images/
+│   └── translations.py
+│   └── sitemap.py
 │
 ├── Switch between german and englisch
 │
