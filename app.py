@@ -3,11 +3,12 @@ from pages import home, cv_references, projects, blog, legal
 from resources.translations import translate
 
 def main():
+    language = "English"
     st.sidebar.title("Navigation")
     page = st.sidebar.radio("Go to", ["Home", "CV and References", "Projects", "Blog", "Legal"])
     
     st.sidebar.title("Language")
-    language = st.sidebar.radio("Switch Language", ["English", "German"])
+    language = st.sidebar.radio("Switch Language", ["en", "de"])
     st.write(f"Selected Language: {language}")
 
     if page == "Home":

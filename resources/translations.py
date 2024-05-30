@@ -1,7 +1,8 @@
 translations = {
     "Navigation":{
-        "en": "Navigation"
-    }
+        "en": "Navigation",
+        "de": "Navigation"
+    },
     "Home": {
         "en": "Home",
         "de": "Startseite"
@@ -121,4 +122,9 @@ translations = {
 }
 
 def translate(text, language):
-    return translations.get(text, {}).get(language, translations.get(text, {}).get("en", text))
+    try:
+        return translations.get(text, {}).get(language, translations.get(text, {}).get("en", text))
+    except:
+        return text 
+
+
