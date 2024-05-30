@@ -125,6 +125,6 @@ def translate(text, language):
     try:
         return translations.get(text, {}).get(language, translations.get(text, {}).get("en", text))
     except:
-        return text 
+        return text + "en"
 
 
