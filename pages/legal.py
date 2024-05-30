@@ -3,7 +3,7 @@ from resources.translations import translate
 
 
 def show():
-    language = st.session_state.get("language", "en")
+    language = st.session_state.get("language")
 
     st.title(translate("Legal", language))
     st.header(translate("Terms", language))
